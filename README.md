@@ -53,19 +53,56 @@ sumit chakrobarty
 
 cat < file2
 ## OUTPUT
-
+```
+(base) sec@sec-ThinkPad-E15-Gen-4:~/Aadhith$ cat < file2
+anil aggarwal
+barun sengupta
+c.k. shukla
+lalit chowdury
+s.n. dasgupta
+```
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- 
+```
+ (base) sec@sec-ThinkPad-E15-Gen-4:~/Aadhith$ cmp file1 file2
+file1 file2 differ: byte 1, line 1
+```
 comm file1 file2
  ## OUTPUT
+```
+(base) sec@sec-ThinkPad-E15-Gen-4:~/Aadhith$ comm file1 file2
+	anil aggarwal
+	barun sengupta
+chanchal singhvi
+		c.k. shukla
+	lalit chowdury
+		s.n. dasgupta
+comm: file 2 is not in sorted order
+	
+sumit chakrobarty
+comm: input is not in sorted order
+
+```
 
  
 diff file1 file2
 ## OUTPUT
-
+```
+(base) sec@sec-ThinkPad-E15-Gen-4:~/Aadhith$ diff file1 file2
+1c1,2
+< chanchal singhvi
+---
+> anil aggarwal
+> barun sengupta
+2a4
+> lalit chowdury
+4c6
+< sumit chakrobarty
+---
+> 
+```
 
 #Filters
 
@@ -88,19 +125,32 @@ cat > file22
 
 cut -c1-3 file11
 ## OUTPUT
-
+```
+(base) sec@sec-ThinkPad-E15-Gen-4:~/Aadhith$ cut -c1-3 file11
+Hel
+Thi
+```
 
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
-
+```
+(base) sec@sec-ThinkPad-E15-Gen-4:~/Aadhith$ cut -d "|" -f 1 file22
+1001 
+1002 
+1003
+```
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
-
-
+```
+(base) sec@sec-ThinkPad-E15-Gen-4:~/Aadhith$ cut -d "|" -f 2 file22
+ Ram 
+ tom 
+ Joe
+```
 cat < newfile 
 ```
 Hello world
