@@ -42,7 +42,8 @@ s.n. dasgupta
 ### Display the content of the files
 cat < file1
 ## OUTPUT
-```(base) sec@sec-ThinkPad-E15-Gen-4:~/Aadhith$ cat < file1
+```
+(base) sec@sec-ThinkPad-E15-Gen-4:~/Aadhith$ cat < file1
 chanchal singhvi
 c.k. shukla
 s.n. dasgupta
